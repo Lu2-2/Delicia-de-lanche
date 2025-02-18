@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Sigmar&display=swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #D9D9D9;
+}
+
+.header-guide{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%; 
+    height: auto;
+    background-color: #D9D9D9;
+    box-shadow: 0px 5px 20px;
+    padding: 10px 20px;
+    margin: 0 auto; 
+    border-radius: 10px;
+}
+
+.header-guide .logo{
+    display: flex;
+    align-items: center;
+}
+
+.navegation{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navegation a{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Parkinsans', sans-serif;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navegation a:hover{
+    background-color: #cecece;
+    border-radius: 10px;
+    transition: ease-in 0.2s;
+}
+
+.navegation a:not(:hover){
+    transition: ease-in 0.2s;
+}
