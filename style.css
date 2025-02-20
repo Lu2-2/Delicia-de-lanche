@@ -5,16 +5,19 @@ body{
     height: 100vh;
     margin: 0;
     background-color: #D9D9D9;
+    font-family: 'Parkinsans',sans-serif;
 }
+
+/* Header Guide */
 
 .header-guide{
     display: flex;
     align-items: center;
     position: relative;
-    width: 80%; 
+    width: 90%; 
     height: auto;
     background-color: #D9D9D9;
-    box-shadow: 0px 5px 20px;
+    box-shadow: 0px 0px 15px;
     padding: 10px 20px;
     margin: 0 auto; 
     border-radius: 10px;
@@ -50,4 +53,36 @@ body{
 
 .navegation a:not(:hover){
     transition: ease-in 0.2s;
+}
+
+/* Main container */
+
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.main_card{
+    width: 100%;
+    box-shadow: 0px 0px 15px;
+    background-color: #D9D9D9;
+}
+
+.produts{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.produts .about img{
+    width: 200px;
+}
+
+.produts .produt-card img{
+    width: 250px;
+    padding: 40px;
 }
