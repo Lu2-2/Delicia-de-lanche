@@ -1,0 +1,7 @@
+:root{
+    /* Cores */
+    --hover-color: #cecece;
+    --background-color: #D9D9D9;
+    /* Animações */
+    --hover-animation: ease 0.2s;
+}

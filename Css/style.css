@@ -4,8 +4,9 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-color: #D9D9D9;
+    background-color: var(--background-color);
     font-family: 'Parkinsans',sans-serif;
+    max-width: 100%;
 }
 
 /* Header Guide */
@@ -16,7 +17,7 @@ body{
     position: relative;
     width: 90%; 
     height: auto;
-    background-color: #D9D9D9;
+    background-color: var(--background-color);
     box-shadow: 0px 0px 15px;
     padding: 10px 20px;
     margin: 0 auto; 
@@ -46,13 +47,13 @@ body{
 }
 
 .navegation a:hover{
-    background-color: #cecece;
+    background-color: var(--hover-color);
     border-radius: 10px;
-    transition: ease-in 0.2s;
+    transition: var(--hover-animation);
 }
 
 .navegation a:not(:hover){
-    transition: ease-in 0.2s;
+    transition: var(--hover-animation);
 }
 
 /* Main container */
@@ -61,15 +62,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin-top: 2%;
     height: auto;
 }
 
 .main_card{
-    width: 100%;
+    padding: 15px;
+    width: 90vw;
+    height: 100vh;
     box-shadow: 0px 0px 15px;
-    background-color: #D9D9D9;
+    background-color: var(--background-color);
+    border-radius: 10px;
 }
 
 .produts{
@@ -88,3 +91,47 @@ body{
     padding: 40px;
 }
 
+.produts .produt-card img:hover{
+    transition: var(--hover-animation);
+    background-color: var(--hover-color);
+    border-radius: 100%;
+}
+
+.produts .produt-card img:not(:hover){
+    transition: var(--hover-animation);
+}
+
+.produts .about img:hover{
+    transition: var(--hover-animation);
+    background-color: var(--hover-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer_container{
+    margin-top: 10px;
+    background-color: #adadad;
+    height: auto;
+}
+
+.footer_container .contato_container span{
+    display: flex;
+    padding: 3px;
+    margin-left: 10px;
+    width: auto;
+    height: auto;
+}
+
+.footer_container .contato_container label{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.footer_container .contato_container img{
+    width: 40px;
+}
