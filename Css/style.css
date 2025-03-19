@@ -18,7 +18,7 @@ body{
     width: 90%; 
     height: auto;
     background-color: var(--background-color);
-    box-shadow: 0px 0px 15px;
+    box-shadow: var(--shadow-box);
     padding: 10px 20px;
     margin: 0 auto; 
     border-radius: 10px;
@@ -70,7 +70,7 @@ body{
     padding: 15px;
     width: 90vw;
     height: 100vh;
-    box-shadow: 0px 0px 15px;
+    box-shadow: var(--shadow-box);
     background-color: var(--background-color);
     border-radius: 10px;
 }
@@ -89,6 +89,7 @@ body{
 .produts .produt-card img{
     width: 250px;
     padding: 40px;
+    cursor: pointer;
 }
 
 .produts .produt-card img:hover{
@@ -116,12 +117,14 @@ body{
     height: auto;
 }
 
+.footer_container .contato_container{
+    margin: 10px;
+}
+
 .footer_container .contato_container span{
     display: flex;
-    padding: 3px;
     margin-left: 10px;
-    width: auto;
-    height: auto;
+    padding: 10px;
 }
 
 .footer_container .contato_container label{
@@ -133,5 +136,12 @@ body{
 }
 
 .footer_container .contato_container img{
-    width: 40px;
+    width: 30px;
+}
+
+.direitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

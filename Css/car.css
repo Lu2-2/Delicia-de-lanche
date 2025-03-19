@@ -1,0 +1,15 @@
+
+
+.main_products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_products .card{
+    width: 90%;
+    height: auto;
+    margin-top: 2%;
+    background-color: var(--background-color);
+    box-shadow: var(--shadow-box);
+}
