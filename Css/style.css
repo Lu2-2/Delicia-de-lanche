@@ -69,7 +69,7 @@ body{
 .main_card{
     padding: 15px;
     width: 90vw;
-    height: 100vh;
+    height: auto;
     box-shadow: var(--shadow-box);
     background-color: var(--background-color);
     border-radius: 10px;
@@ -92,21 +92,22 @@ body{
     cursor: pointer;
 }
 
-.produts .produt-card img:hover{
-    transition: var(--hover-animation);
-    background-color: var(--hover-color);
-    border-radius: 100%;
+.products_contents h1{
+    padding: 10px;
+    text-align: center;
 }
 
-.produts .produt-card img:not(:hover){
-    transition: var(--hover-animation);
+.products_contents .all_products{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    border: solid black 1px;
+    width: 90vw;
+    height: auto;
 }
 
-.produts .about img:hover{
-    transition: var(--hover-animation);
-    background-color: var(--hover-color);
-    border-radius: 10px;
-    cursor: pointer;
+.products_contents .all_products img{
+    width: 300px;
 }
 
 /* Footer */
@@ -129,9 +130,6 @@ body{
 
 .footer_container .contato_container label{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-left: 10px;
 }
 
