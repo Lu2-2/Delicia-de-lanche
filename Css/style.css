@@ -16,7 +16,6 @@ body{
     align-items: center;
     position: relative;
     width: 90%; 
-    height: auto;
     background-color: var(--background-color);
     box-shadow: var(--shadow-box);
     padding: 10px 20px;
@@ -32,8 +31,7 @@ body{
 .navegation{
     display: flex;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 400px;
 }
 
 .navegation a{
@@ -94,17 +92,17 @@ body{
 
 .produts .produt-card img:hover{
     transition: var(--hover-animation);
-    background-color: var(--hover-color);
     border-radius: 100%;
+    
 }
 
 .produts .produt-card img:not(:hover){
     transition: var(--hover-animation);
+    opacity: 50%;
 }
 
 .produts .about img:hover{
     transition: var(--hover-animation);
-    background-color: var(--hover-color);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -117,6 +115,7 @@ body{
     border: solid 2px;
     border-radius: 10px;
     overflow: auto;
+    box-shadow: 0px 0px 20px 2px;
 }
 
 .products_contents span{
