@@ -93,7 +93,6 @@ body{
 .produts .produt-card img:hover{
     transition: var(--hover-animation);
     border-radius: 100%;
-    
 }
 
 .produts .produt-card img:not(:hover){
@@ -147,9 +146,6 @@ body{
 
 .footer_container .contato_container label{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-left: 10px;
 }
 
