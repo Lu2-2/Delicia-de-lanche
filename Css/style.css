@@ -62,7 +62,6 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 2%;
-    height: auto;
 }
 
 .main_card{
@@ -112,10 +111,9 @@ body{
 .products_contents{
     width: 100%;
     height: auto;
-    border: solid 1px;
     border-radius: 10px;
     overflow: auto;
-    box-shadow: 0px 0px 30px 5px;
+    box-shadow: var(--shadow-box);
 }
 
 .products_contents h1{
