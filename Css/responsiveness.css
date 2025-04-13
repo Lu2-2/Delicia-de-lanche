@@ -1,0 +1,8 @@
+@media screen and (max-width:1000px){
+    .header-guide .logo{
+        display: none;
+    }
+    .produts .produt-card img{
+        display: none;
+    }
+}

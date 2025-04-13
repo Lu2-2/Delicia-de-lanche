@@ -15,7 +15,8 @@ body{
     display: flex;
     align-items: center;
     position: relative;
-    width: 90%; 
+    width: 100%; 
+    height: 5.5rem;
     background-color: var(--background-color);
     box-shadow: var(--shadow-box);
     padding: 10px 20px;
@@ -23,9 +24,9 @@ body{
     border-radius: 10px;
 }
 
-.header-guide .logo{
-    display: flex;
-    align-items: center;
+.header-guide .logo img{
+    margin-left: 20px;
+    width: 10rem;
 }
 
 .navegation{
@@ -86,7 +87,8 @@ body{
 }
 
 .produts .produt-card img{
-    width: 250px;
+    max-width: 250px;
+    min-width: 50px;
     padding: 40px;
     cursor: pointer;
 }
@@ -110,20 +112,102 @@ body{
 /* Caixa de produtos*/
 
 .products_contents{
-    width: 100%;
-    height: auto;
-    border: solid 1px;
+    margin: 0 auto;
+    width: 90%;
     border-radius: 10px;
     overflow: auto;
-    box-shadow: 0px 0px 30px 5px;
+    box-shadow: 0px 0px 30px;
+    overflow: hidden;
 }
 
-.products_contents h1{
-    text-align: center;
+.products_slide input{
+    display: none;
 }
 
-.products_contents img{
+.products_slide{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: ease-out 1.5s;
+}
+
+.slide img{
     width: 100%;
+}
+
+.manual_navigation{
+    position: absolute;
+    width: 80%;
+    margin-top: 39%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual_btn{
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.manual_btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual_btn:hover{
+    background-color: rgb(126, 126, 126);
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 80%;
+    margin-top: 39%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+/* Slide function*/
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio1:checked ~ .navigation-auto .auto_btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto_btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto_btn3{
+    background-color: white;
 }
 
 /* Footer */

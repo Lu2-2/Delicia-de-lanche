@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Css/style.css">
     <link rel="stylesheet" href="/Css/root.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/responsiveness.css">
     <title>Delícia de Lanche</title>
 </head>
 <body>
     <header class="header-guide">
         <div class="logo">
-            <img src="/imgs/marca/logo.png" alt="logo" width="200">
+            <img src="/imgs/marca/logo.png" alt="logo">
         </div>
         <nav class="navegation">
             <a href="">Início</a>
@@ -48,8 +49,35 @@
                 </span>
             </div>
             <div class="products_contents">
-                <div class="all_products">
-                   <img src="/imgs/lanches_slide/doublechiken.png" alt="">
+                <div class="products_slide">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    
+                    <span class="slide first">
+                        <img src="/imgs/lanches_slide/doublechiken.png" alt="Double Chiken">
+                    </span>
+                    <span class="slide">
+                        <img src="/imgs/lanches_slide/bigcombo.png" alt="Big Combo">
+                    </span>
+                    <span class="slide">
+                        <img src="/imgs/lanches_slide/bigmash.png" alt="Bigc Mash">
+                    </span>
+                    
+                    <div class="navigation-auto">
+                        <div class="auto_btn1">
+                        </div>
+                        <div class="auto_btn2">
+                        </div>
+                        <div class="auto_btn3">
+                        </div>
+                    </div>
+                    
+                    <div class="manual_navigation">
+                        <label for="radio1" class="manual_btn"></label>
+                        <label for="radio2" class="manual_btn"></label>
+                        <label for="radio3" class="manual_btn"></label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,5 +100,6 @@
             
         </span>
     </footer>
+    <script src="/Js/main.js"></script>
 </body>
 </html>
