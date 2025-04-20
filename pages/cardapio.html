@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/Css/cardapio.css">
     <link rel="stylesheet" href="/Css/root.css">
     <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/cardapio.css">
     <link rel="stylesheet" href="/Css/responsiveness.css">
     <title>Cardápio</title>
 </head>
@@ -22,18 +23,36 @@
             <a href="/pages/historia.html">História</a>
         </nav>
     </header>
-    <main class="main_products">
+    <main class="main_container">
         <article class="main_card">
-            <section class="all_products">
-                <span>
-                    <img src="/imgs/lanches/big_burger.png">
-                </span>
-                <span>
-                    <img src="/imgs/lanches/big_burger.png">
-                </span>
-                <span>
-                    <img src="/imgs/lanches/big_burger.png">
-                </span>000012222+
+            <nav class="navigation">
+                <input type="text" id="" class="input_nav">
+            </nav>
+            <section class="products_containers">
+                <div class="mini_card">
+                    <span class="card_itens" id="BB">
+                        <h1>BB - Big Burger</h1>
+                        <img src="/imgs/lanches/big_burger.png">
+                        <p>Valor R$30,32</p>
+                        <button class="btn">Comprar</button>
+                    </span>
+                </div>
+                <div class="mini_card">
+                    <span class="card_itens">
+                        <h1>BF - Burger and Fries</h1>
+                        <img src="/imgs/lanches/burger_fries.png" id="BF">
+                        <p>Valor R$18,59</p>
+                        <button class="btn">Comprar</button>
+                    </span>
+                </div>
+                <div class="mini_card">
+                    <span class="card_itens">
+                        <h1>CB - Chicken Burgues</h1>
+                        <img src="/imgs/lanches/chicken_burgues.png" id="CB">
+                        <p>Valor R$27,90</p>
+                        <button class="btn">Comprar</button>
+                    </span>
+                </div>
             </section>
         </article>
     </main>
