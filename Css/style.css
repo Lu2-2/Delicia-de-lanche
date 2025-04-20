@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Sigmar&display=swap');
 
 body{
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     background-color: var(--background-color);
