@@ -212,6 +212,7 @@ body{
 /* Footer */
 
 .footer_container{
+    position: relative;
     margin-top: 10px;
     background-color: #adadad;
     height: auto;
@@ -240,4 +241,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.app{
+    position: absolute;
+    left: 88%;
+    top: 1.5rem;
+}
+
+.logo_app a img{
+    cursor: pointer;
+    width: 4.5rem;
 }

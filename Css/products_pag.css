@@ -1,0 +1,10 @@
+.item_container{
+    position: relative;
+}
+
+.item_container h2{
+    position: absolute;
+    top: 1%;
+    right: 23%;
+    font-size: 30px;
+}
